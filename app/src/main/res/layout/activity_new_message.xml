@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <Spinner
+        android:id="@+id/dropdown_menu"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:inputType="textPersonName"
+        android:hint="Select email"
+        app:layout_constraintBottom_toTopOf="@+id/title_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <EditText
+        android:id="@+id/title_value"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="44dp"
+        android:hint="Send To"
+        app:layout_constraintBottom_toTopOf="@+id/sendTo_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sendTo_value"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        app:layout_constraintBottom_toTopOf="@+id/message_send_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/message_send_value"
+        android:layout_width="287dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="28dp"
+        android:hint="Input Message ..."
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/editTextTime"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="96dp"
+        android:entries="@array/spinnerItems"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddButtonAction"
+        android:text="create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
